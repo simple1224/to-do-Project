@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO do list!</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="msg">
+        <span class="msg_content"></span>
+        <span class="anchor confirmed">知道了</span>
+    </div>
+    <!--总容器开始-->
+    <div class="container">
+        <h1>my to do list!</h1>
+        <form class="add-task">
+            <!--autofocus:该属性规定加载页面时input元素自动获取焦点
+            autocomplete:规定输入字段是否应该自动完成功能（属性值：on,off）-->
+            <input name="content" type="text"  placeholder="e.g.今天记得学习"
+                   autofocus="autofocus" autocomplete="off">
+            <button type="submit">submit</button>
+        </form>
+        <!--清单列表开始-->
+        <div class="task-list">
+            <!-- div.task-item{item content $}*10-->
+            <!--任务开始-->
+           <!-- <div class="task-item">
+                <span><input type="checkbox"></span>
+                &lt;!&ndash;显示每个列表的任务&ndash;&gt;
+                <span class="task-content">item content 1</span>
+                <span>delete</span>
+                <span>detial</span>
+            </div>-->
+            <!--任务结束-->
+        </div>
+        <!--清单列表结束-->
+        <div class="task-detail-mask"></div>
+        <!--任务详情开始-->
+        <div class="task-detail">
+            <!--<div>
+                &lt;!&ndash;任务标题开始&ndash;&gt;
+                <div class="content">
+                    下午记得买菜
+                </div>
+                &lt;!&ndash;任务标题结束&ndash;&gt;
+                &lt;!&ndash;任务描述开始&ndash;&gt;
+                <div>
+                    <div class="desc">
+                        <textarea id=""></textarea>
+                    </div>
+                </div>
+                &lt;!&ndash;任务描述结束&ndash;&gt;
+                &lt;!&ndash;任务定时提醒开始&ndash;&gt;
+                <div class="remind">
+                    <input type="date">
+                    &lt;!&ndash;<button type="submit">submit</button>&ndash;&gt;
+                </div>
+                &lt;!&ndash;任务定时提醒结束&ndash;&gt;
+            </div>-->
+        </div>
+        <!--任务详情结束-->
+    </div>
+    <!--总容器结束-->
+    <video class="alerter" src="alert.mp3"></video>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/storejs/dist/store.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+    <script src="js/base.js"></script>
+
+ <!--todo ghjk-->
+</body>
+</html>

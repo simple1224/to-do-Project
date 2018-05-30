@@ -1,0 +1,9 @@
+{
+  "name": "to do Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "jquery-datetimepicker": "^2.5.20",
+    "storejs": "latest"
+  }
+}
