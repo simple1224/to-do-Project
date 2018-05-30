@@ -2,198 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d325673-6cd3-42c6-84d1-8f2bccd86385" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/24590.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/todolist.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/alert.mp3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/reset.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/base.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/MIT-LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/datetimepicker.jquery.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/doc.tpl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/jquery.datetimepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/jquery.datetimepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/karma.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/3.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/screen/6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/app.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/input_in_container_fixed_to_bottom_of_viewport.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/input_in_container_fixed_to_top_of_viewport.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/destroy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/events.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/init.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/methods.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-datetimepicker/tests/tests/options.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mousewheel/ChangeLog.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mousewheel/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mousewheel/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mousewheel/jquery.mousewheel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mousewheel/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/camelCase.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/toType.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rboxStyle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isFunction.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isWindow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/CHANGE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/examples/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/js/php-date-formatter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/js/php-date-formatter.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/php-date-formatter/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/dist/store.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/dist/store.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/storejs/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -316,7 +125,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="219" />
     <option name="y" value="34" />
     <option name="width" value="1132" />
@@ -469,12 +278,12 @@
       <workItem from="1527557929754" duration="15055000" />
       <workItem from="1527580062794" duration="18767000" />
       <workItem from="1527604346904" duration="12393000" />
-      <workItem from="1527686953846" duration="159000" />
+      <workItem from="1527686953846" duration="1567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115243000" />
+    <option name="totallyTimeSpent" value="116651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +295,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28214827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="21" y="35" width="288" height="694" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
