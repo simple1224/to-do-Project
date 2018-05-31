@@ -8,9 +8,9 @@
         ,$task_delete_trigger
         ,$task_detail
         ,$task_detail_trigger
-        ,$task_detail = $('.task-detail')
+        ,$task_detail = $('.task-detail')//item中的详情按钮
         ,$task_detail_mask = $('.task-detail-mask')
-        ,current_index
+        ,current_index//当前选中task的index
         ,$update_form
         ,$task_detail_content
         ,$task_detail_content_input
@@ -40,7 +40,7 @@
     }
 
     $form_add_task.on('submit',on_add_task_form_submit);
-    $task_detail_mask.on('click',hide_task_detail);
+    $task_detail_mask.on('click',hide_task_detail);//当点击面板其他地方时隐藏详细功能
 
     //e表示event时间 按submit进行事件监听
     function on_add_task_form_submit(e) {
@@ -76,10 +76,11 @@
 
     //渲染单条task模版
     function render_task_item(data,index) {
-        if(!data || !index) return;
+        if(!data || !index) return;//如果没有data或者index则返回
         var list_item_tpl =
             //data-*是H5新增的一项新功能  自定义数据属性  在js中用dataset 属性来存取 data-* 自定义属性的值
             //获取值时应该符合驼峰命名法  var a=document.getElementsByTagName(input); a.dataset.indexColor;
+            //index从0开始  表示每一条的记录
             '<div class="task-item" data-index="' + index + '">'+
             '<span><input class="complete" '+ (data.complete ? 'checked':'')+' type="checkbox"></span>'+
             '<span class="task-content">' + data.content + '</span>'+
@@ -103,8 +104,9 @@
             if( item && item.complete)
                 complete_items[i] = item;
             else
-                var $task = render_task_item(item,i);
-            $task_list.prepend($task);// 把单调数据添加到任务列表中
+                var $task = render_task_item(item,i);//这里的i是index
+            $task_list.prepend($task);// 把单调数据添加到任务列表中  把存入的数据push到母元素的第一个
+            //prepend()和append()都是在母元素中添加元素  区别是前者是加入到母元素的第一个 后者是添加到最后一个
         }
         // console.log('complete_item',complete_items)
 
@@ -116,16 +118,40 @@
             $task_list.append($task);
         }
 
-        $task_delete_trigger = $('.action.delete');
+        $task_delete_trigger = $('.action.delete');//trigger是触发的意思
         $task_detail_trigger = $('.action.detail');
         $checkbox_complete = $('.task-list .complete[type=checkbox]');
-        Listen_task_delete();
+        Listen_task_delete();//jquery不会自动绑定数据和方法  需要手完成
         Listen_task_detail();
         Listen_checkbox_complete();
     }
     //以上内容是添加task
     //#################################################################################
+    //刷新localStorage数据，并渲染模版tpl
+    function refresh_task_list() {
+        //更新数据
+        store.set('task_list',task_list);
+        //再渲染一次
+        render_task_list();
+    }
+    //#####################################################################################
     //下面开始删除task
+
+    //查找并监听删除按钮的点击事件
+    function Listen_task_delete() {
+        $task_delete_trigger.on('click',function () {
+            var $this = $(this);//这里的this是指delete按钮
+            //找到删除按钮所在的task元素
+            var $item = $this.parent().parent();//$this.parent()是指.delete的父类fr，$item是选中的一条item
+            var index = $item.data('index');//表示选中第几条记录  data()取出选中item所对应的index
+            //确认删除
+            pop("确定删除吗")
+                .then(function (r) {
+                    r ? task_delete(index) : null;
+                })
+        });
+    }
+
     //删除一条task
     function task_delete(index) {
         //如果没有index 或者  index不存在则直接返回
@@ -134,15 +160,107 @@
         //更新localStorage
         refresh_task_list();
     }
-
-    //刷新localStorage数据，并渲染模版tpl
-    function refresh_task_list() {
-        //更新数据
-        store.set('task_list',task_list);
-        //再渲染一次
-        render_task_list();
+//****************************************************************************************************
+    //查看并监听详情按钮的点击事件
+    function Listen_task_detail() {
+        var index;
+        $('.task-item').on('dblclick',function () {
+            index = $(this).data('index');
+            show_task_detail(index);
+        });
+        //点击item中的详情按钮 触发下面的事件
+        $task_detail_trigger.on('click',function () {
+            var $this = $(this);
+            var $item = $this.parent().parent();
+            index = $item.data('index');
+            show_task_detail(index);
+        })
     }
 
+    //显示task详情
+    function show_task_detail(index) {
+        //生成详情模版  渲染这个单个模版
+        render_task_detail(index);
+        current_index = index;//那当前的index赋给current_index
+        //显示详情模版(默认隐藏)
+        $task_detail.show();
+        //显示详情模版task(默认隐藏)
+        $task_detail_mask.show();
+
+    }
+    //隐藏task详情
+    function hide_task_detail() {
+        $task_detail.hide();
+        $task_detail_mask.hide();
+    }
+
+    //更新task  知道更新哪一条  更新什么内容
+    function update_task(index,data) {
+        if(!index || !task_list[index]) return;
+        task_list[index] = $.extend({},task_list[index],data);
+        //Angular中的merge（）方法相当于jQuery中的extend()
+        refresh_task_list();
+    }
+
+    //渲染指定item的详细信息  render:专业术语渲染
+    function render_task_detail(index) {
+        if(!index || !task_list[index]) return;
+
+        var item = task_list[index];//这里的item是什么？？？
+        // console.log('task_list[index]',task_list[index])
+        // console.log('item',item)
+
+        var tpl =
+            '<form>'+
+            '<div class="content">'+
+            item.content +
+            '</div>'+
+            '<div class="input_item">'+
+            '<input style="display: none;" type="text" name="content" value="' + (item.content || '') + '"></div>' +
+            '<div>'+
+            '<div class="desc input_item">'+
+            '<textarea  name="desc"> '+ (item.desc || '') + ' </textarea>'+
+            '</div>'+
+            '</div>'+
+            '<div class="remind input_item">'+
+            '<label>提醒时间</label>'+
+            '<input class="datetime" name="remind_date" type="text" value="'+ (item.remind_date || '') +'">'+
+            '</div>'+
+            '<div class="input_item"><button type="submit">更新</button></div>'+
+            '</form>';
+        //清空task详情
+        $task_detail.html(null);
+        //用新模版替换旧模版
+        $task_detail.html(tpl);
+        $('.datetime').datetimepicker();
+        //选中其中的form元素，因为之后会使用其监听submit事件  整个详情的form
+        $update_form = $task_detail.find('form');
+        //选中显示task内容的元素  是详情中最上面的标题input的内容的容器
+        $task_detail_content = $update_form.find('.content');
+        //选中显示task input内容的元素
+        $task_detail_content_input = $update_form.find('[name=content]');
+        //双击内容元素显示input，隐藏自己
+        $task_detail_content.on('dblclick',function () {
+            $task_detail_content_input.show();
+            $task_detail_content.hide();
+        });
+
+        //单击更新时触发的事件
+        $update_form.on('submit',function (e) {
+            e.preventDefault();//禁止默认提交
+            var data = {};
+            //获取表单中各个input的值
+            data.content = $(this).find('[name = content]').val();
+            data.desc = $(this).find('[name = desc]').val();
+            data.remind_date = $(this).find('[name = remind_date]').val();
+            update_task(index,data);//更新数据  新的数据是data 旧的数据是item  把数据写入store中
+            hide_task_detail();
+        })
+
+    }
+
+
+//****************************************************************************************
     function pop(arg) {
         if(!arg){
             console.error('pop title is required');
@@ -272,21 +390,7 @@
     }
 
 
-    //监听打开task详情事件
-    function Listen_task_detail() {
-        var index;
-        $('.task-item').on('dblclick',function () {
-            index = $(this).data('index');
-            show_task_detail(index);
-        });
 
-        $task_detail_trigger.on('click',function () {
-            var $this = $(this);
-            var $item = $this.parent().parent();
-            index = $item.data('index');
-            show_task_detail(index);
-        })
-    }
 
     //监听完成任务（task）事件
     function Listen_checkbox_complete() {
@@ -304,104 +408,13 @@
         return store.get('task_list')[index];
     }
     
-    //查看task详情
-    function show_task_detail(index) {
-        //生成详情模版
-        render_task_detail(index);
-        current_index = index;
-        //显示详情模版(默认隐藏)
-        $task_detail.show();
-        //显示详情模版task(默认隐藏)
-        $task_detail_mask.show();
 
-    }
-    //更新task
-    function update_task(index,data) {
-        if(!index || !task_list[index])
-            return;
 
-        // task_list[index] = data;
-        task_list[index] = $.extend({},task_list[index],data);
-        //Angular中的merge（）方法相当于jQuery中的extend()
-        refresh_task_list();
-    }
 
-    //隐藏task详情
-    function hide_task_detail() {
-        $task_detail.hide();
-        $task_detail_mask.hide();
-    }
 
-    //渲染指定task的详细信息  render:专业术语渲染
-    function render_task_detail(index) {
-        if(index === undefined || !task_list[index]) return;
 
-        var item = task_list[index];
 
-        var tpl =
-        '<form>'+
-        '<div class="content">'+
-            item.content+
-        '</div>'+
-            '<div class="input_item"><input style="display : none;" type="text" name="content" value="'+(item.content || '')+'"></div>'+
-        '<div>'+
-            '<div class="desc input_item">'+
-                '<textarea  name="desc">'+ (item.desc || '') + '</textarea>'+
-            '</div>'+
-        '</div>'+
-            '<div class="remind input_item">'+
-                '<label for="">提醒时间</label>'+
-                '<input class="datetime" name="remind_date" type="text" value="'+ (item.remind_date || '') +'">'+
-            '</div>'+
-            '<div class="input_item"><button type="submit">更新</button></div>'+
-        '</form>';
-        //清空task详情
-        $task_detail.html(null);
-        //用新模版替换旧模版
-        $task_detail.html(tpl);
-        $('.datetime').datetimepicker();
-        //选中其中的form元素，因为之后会使用其监听submit事件
-        $update_form = $task_detail.find('form');
-        //选中显示task内容的元素
-        $task_detail_content = $update_form.find('.content');
-        //选中显示task input内容的元素
-        $task_detail_content_input = $update_form.find('[name=content]');
 
-        //双击内容元素显示input，隐藏自己
-        $task_detail_content.on('dblclick',function () {
-            $task_detail_content_input.show();
-            $task_detail_content.hide();
-        });
-
-        $update_form.on('submit',function (e) {
-            e.preventDefault();
-            var data = {};
-            //获取表单中各个input的值
-            data.content = $(this).find('[name=comment]').val();
-            data.desc = $(this).find('[name=desc]').val();
-            data.remind_date = $(this).find('[name=remind_date]').val();
-            // console.log('data',data)
-            update_task(index,data);
-            hide_task_detail();
-        })
-
-    }
-
-    //查找并监听所以删除按钮的点击事件
-    function Listen_task_delete() {
-        $task_delete_trigger.on('click',function () {
-            var $this = $(this);
-            //找到删除按钮所在的task元素
-            var $item = $this.parent().parent();
-            var index = $item.data('index');
-            //确认删除
-            pop("确定删除吗")
-                .then(function () {
-                    r ? task_delete(index) : null;
-                })
-
-        });
-    }
 
 
 
@@ -414,20 +427,22 @@
 
     function task_remind_check() {
         // show_msg();
+        // 当前时间
         var current_timestamp;
         var itl = setInterval(function () {
             for (var i = 0; i < task_list.length; i++){
                 var item = get(i),task_timestamp;
-                if(!item || item.remind_date || item.informed) continue;
+                if(!item || !item.remind_date || item.informed) continue;
 
                 current_timestamp = (new Date()).getTime();
-                // console.log('current_timestamp',current_timestamp)
                 //getTime()把当前时间转化为时间戳
                 task_timestamp = (new Date(item.remind_date)).getTime();
-                if(current_timestamp - task_timestamp >= 1){
+                if(current_timestamp - task_timestamp >=1){
                     update_task(i,{informed:true});
+                    console.log("ok")
                     show_msg(item.content);
                 }
+                console.log("false")
             }
         },300);
     }

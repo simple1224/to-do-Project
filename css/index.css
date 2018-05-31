@@ -23,7 +23,7 @@ h1{
 .fr{
     float: right;
 }
-input,.task-item,button,.task-detail,.task-detail-mask,textarea{
+input,.task-item,button,.task-detail-mask,textarea{
     border-radius: 3px;
     padding: 10px;
 }
@@ -108,8 +108,8 @@ input [type=submit]{
     padding: 10px;
     width: 50%;
     height: 100%;
-    bottom:0;
-    right: 0;
+    bottom:-10px;
+    right: 10px;
     border-radius: 3px 0 0 3px;
     -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,.1);
 }
